@@ -14,7 +14,7 @@ namespace worldBank
         private readonly double Income;
 
 
-        public PhysicalPerson(string name, string latname, string rg, string cpf, DateTime birthdate)
+        public PhysicalPerson(string name, string lastname, string rg, string cpf, DateTime birthdate)
         {
             this.Name = name;
             this.LastName = lastName;
@@ -24,7 +24,7 @@ namespace worldBank
             // Random numbers between 5 and 85
             this.Age = new Random().Next(5, 85);
             this.AgeRange = Auxiliary.TranslateAgeRange(this.Age);
-            this.Income = new Random().NextDouble(1000, 10000);
+            this.Income = new Random().NextDouble(1000, 7000);
         }
     }
 }
