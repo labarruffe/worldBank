@@ -23,7 +23,7 @@ namespace worldBank
             this.StateRegistration = Int.Parse(stateRegistration);
             this.OpeningDate = openingDate;
             this.Age = new Random().Next(1, 70);
-            this.Revenues = new Random().NextBytes(10000, 1000000);
+            this.Revenues = new Random().NextBytes(3000, 10000);
         }
     }
 }
